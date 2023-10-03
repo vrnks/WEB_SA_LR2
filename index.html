@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Shop 2.0</title>
+    <style>
+      form {
+        width: 500px;
+        text-align: left;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+      }
+
+      input[type="text"],
+      textarea,
+      select {
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 10;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        width: 80%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px #888888;
+      }
+
+      select {
+        background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+      }
+      legend {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="some_script">
+      <fieldset>
+        <fieldset>
+          <div style="text-align: center; margin: 0 auto">
+            <legend>Pizza Shop 2.0</legend>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Veronika"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="topping">Pizza Topping:</label>
+          <input type="radio" id="supreme" name="topping" value="Supreme" />
+          <label for="supreme">Supreme</label>
+          <input
+            type="radio"
+            id="vegetarian"
+            name="topping"
+            value="Vegetarian"
+          />
+          <label for="vegetarian">Vegetarian</label>
+          <input type="radio" id="hawaiian" name="topping" value="Hawaiian" />
+          <label for="hawaiian">Hawaiian</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="sauce">Pizza Sauce:</label>
+          <select id="sauce" name="sauce">
+            <option value="Tomato">Tomato</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label>Optional Extras:</label>
+          <input
+            type="checkbox"
+            id="extraCheese"
+            name="extras[]"
+            value="Extra Cheese"
+          />
+          <label for="extraCheese">Extra Cheese</label>
+          <input
+            type="checkbox"
+            id="glutenFree"
+            name="extras[]"
+            value="Gluten Free Base"
+          />
+          <label for="glutenFree">Gluten Free Base</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="instructions">Delivery Instructions:</label>
+          <textarea
+            id="instructions"
+            name="instructions"
+            rows="4"
+            cols="50"
+            placeholder="City, street, house, time"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <div style="text-align: center; margin: 0 auto">
+            <input type="submit" value="Send my Order" />
+          </div>
+        </fieldset>
+      </fieldset>
+    </form>
+  </body>
+</html>
